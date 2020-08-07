@@ -7,7 +7,7 @@ import random
 #Variaveis de acesso ao instagram
 seuusuario = 'DIGITE SEU USUARIO AQUI'
 suasenha = 'DIGITE SUA SENHA AQUI'
-pagina = "DIGITE A PAGINA DO INSTAGRAMQUE DESEJA COMENTAR (INCLUINDO O HTTP)" # Coloque aqui a pagina que deseja comentar!
+pagina = "DIGITE A PAGINA DO INSTAGRAMQUE DESEJA COMENTAR (INCLUINDO O HTTP)" # Coloque aqui a pagina que deseja comentar!"
 
 contador = 1
 
