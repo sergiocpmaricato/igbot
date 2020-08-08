@@ -79,8 +79,11 @@ class InstagramBot:
         print('')
         time.sleep(tempo_de_espera)
         publicar = driver.find_element_by_xpath("//button[@class='sqdOP yWX7d    y3zKF     ']")
-        publicar.send_keys(Keys.ENTER)
-        publicar.click()
+        publicar.send_keys(Keys.RETURN)
+        try:
+            publicar.send_keys(Keys.RETURN)
+        except:
+            print('Segundo ENTER não foi necessario!')
         time.sleep(10) # Tempo de publicação
         driver.refresh()
         time.sleep(7)
