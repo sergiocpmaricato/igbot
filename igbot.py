@@ -7,7 +7,7 @@ import random
 #Variaveis de acesso ao instagram
 seuusuario = 'DIGITE SEU USUARIO AQUI'
 suasenha = 'DIGITE SUA SENHA AQUI'
-pagina = "DIGITE A PAGINA DO INSTAGRAMQUE DESEJA COMENTAR (INCLUINDO O HTTP)" # Coloque aqui a pagina que deseja comentar!"
+pagina = 'DIGITE A PAGINA DO INSTAGRAMQUE DESEJA COMENTAR (INCLUINDO O HTTP)' # Coloque aqui a pagina que deseja comentar!"
 
 contador = 1
 
@@ -79,6 +79,7 @@ class InstagramBot:
         print('')
         time.sleep(tempo_de_espera)
         publicar = driver.find_element_by_xpath("//button[@class='sqdOP yWX7d    y3zKF     ']")
+        publicar.send_keys(Keys.ENTER)
         publicar.click()
         time.sleep(10) # Tempo de publicação
         driver.refresh()
