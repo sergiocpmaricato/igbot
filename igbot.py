@@ -84,7 +84,7 @@ class InstagramBot:
         try:
             publicar.send_keys(Keys.RETURN)
         except:
-            print('Segundo ENTER não foi necessario!')
+            pass
         time.sleep(10) # Tempo de publicação
         driver.refresh()
         time.sleep(7)
